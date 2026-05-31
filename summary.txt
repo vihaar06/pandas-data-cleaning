@@ -1,0 +1,75 @@
+TASK SUMMARY
+
+Objective
+
+The objective of this task was to gain practical experience in data exploration and data cleaning using Python and the Pandas library. The task involved loading a CSV dataset, understanding its structure, identifying data quality issues, performing basic preprocessing operations, and generating a cleaned dataset for further analysis.
+
+Work Performed
+
+1. Dataset Loading
+
+The provided CSV dataset was loaded into a Pandas DataFrame using the `read_csv()` function. This allowed the data to be accessed and manipulated efficiently using Pandas operations.
+
+2. Data Exploration
+
+Before making any modifications, the dataset was explored to understand its overall structure and contents. The following operations were performed:
+
+* Displayed the first few records using `head()`
+* Displayed the last few records using `tail()`
+* Checked the dimensions of the dataset using `shape`
+* Examined column names using `columns`
+* Inspected data types and non-null counts using `info()`
+
+This step helped in understanding the available features and identifying potential data quality issues.
+
+3. Missing Value Analysis
+
+The dataset was analyzed for missing or null values using Pandas functions such as `isnull()` and `sum()`. Columns containing missing data were identified and appropriate handling techniques were applied to ensure data consistency.
+
+4. Data Cleaning
+
+Data cleaning operations were performed to improve the overall quality of the dataset. Missing values were handled using suitable methods depending on the nature of the data. The dataset was reviewed to ensure that records remained consistent and usable after preprocessing.
+
+5. Basic Data Operations
+
+Several basic DataFrame operations were performed to become familiar with data manipulation techniques. These included:
+
+* Selecting specific columns
+* Filtering rows based on conditions
+* Viewing subsets of data
+* Inspecting records that met particular criteria
+
+These operations helped in understanding how useful information can be extracted from a larger dataset.
+
+6. Duplicate Record Verification
+
+The dataset was checked for duplicate records using the `duplicated()` function. Any duplicate entries identified during the process were removed to maintain data integrity and avoid redundant information.
+
+7. Feature Creation
+
+A new derived column named `total_amount` was created. Since the original dataset did not contain a quantity field, a sample quantity column was generated for demonstration purposes. The new column was calculated using the formula:
+
+`total_amount = price × quantity`
+
+This step demonstrated how new features can be created from existing data to support further analysis.
+
+8. Exporting the Cleaned Dataset
+
+After completing all cleaning and transformation steps, the processed dataset was exported and saved as a new CSV file named:
+
+`combined_dataset_cleaned.csv`
+
+This file contains the final cleaned version of the dataset and can be used for future analysis or reporting tasks.
+
+Final Outcome
+
+The task provided hands-on experience with the complete data preprocessing workflow using Pandas. It covered data loading, exploration, handling missing values, duplicate checking, filtering, feature engineering, and exporting results. These operations form the foundation of real-world data analysis and machine learning workflows.
+
+Final Dataset Information
+
+* Final dataset size: 1000 rows × 27 columns
+* Output file generated successfully: `combined_dataset_cleaned.csv`
+
+Conclusion
+
+Through this task, I developed a better understanding of how raw data can be explored, cleaned, and transformed into a more structured format using Pandas. The exercise strengthened my knowledge of DataFrame operations and highlighted the importance of data preprocessing before performing any further analysis.
